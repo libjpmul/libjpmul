@@ -36,7 +36,7 @@ import java.util.ArrayList;
  */
 
 /**
- * This is the public interface that our ACP142 implementation exposes.
+ * This is the public interface that libjpmul exposes.
  * It details all methods available to the end user of the protocol,
  * and is the interface that needs to be followed to make alternative
  * implementations compatible with ours.
@@ -44,7 +44,7 @@ import java.util.ArrayList;
  * @author Thomas Martin Schmid, Karl Mardoff Kittilsen
  *
  */
-public interface IAcp142 {
+public interface ILibjpmul {
 
     /**
      * Sends the data given to a static multicast group defined by the given

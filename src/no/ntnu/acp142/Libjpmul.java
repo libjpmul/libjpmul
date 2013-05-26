@@ -48,7 +48,7 @@ import no.ntnu.acp142.rdt.ReliableDataTransfer;
 /**
  * @author Karl Mardoff Kittilsen, Bjørn Tungesvik
  */
-public class Libjpmul implements IAcp142 {
+public class Libjpmul implements ILibjpmul {
 
     /**
      * Emcon callback object
