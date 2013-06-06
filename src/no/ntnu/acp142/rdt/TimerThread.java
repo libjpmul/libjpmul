@@ -321,6 +321,7 @@ public class TimerThread extends Thread {
 	 */
 	private void handleExpiryTimerTransmit(Timer timer) throws InterruptedException {
         stopTimer(timer.getMsg(), TimerType.RETRANSMISSION_TIMER);
+        rdt.persistentGroups.remove(timer.getMsg().getRecipients().hashCode());
         MessageEntry currentEntry = timer.getMsg();
         int sourceId = currentEntry.getAddressPdu().getSourceID();
         int messageId = currentEntry.getAddressPdu().getMessageId();
